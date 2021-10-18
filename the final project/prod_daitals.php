@@ -63,6 +63,9 @@
       ADS
      </div>
      <section>
+       <div id="sec2">
+
+       </div>
        <div class="container">
         <h1>Product details</h1><hr>
         <p>Product detailsProduct detailsProduct detailsProduct detailsProduct detailsProduct detailsProduct detailsProduct detailsProduct detailsProduct detailsProduct detailsProduct detailsProduct details</p>
@@ -137,6 +140,109 @@
             <p>sdfds</p>
             <span>01/02/2000 </span>by <span>first name</span>
           </div><hr>
+        </div>
+       </div>
+       <div class="container">
+        <h2>More items from this seller</h2>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
+        </div>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
+        </div>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
+        </div>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
+        </div>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
+        </div>
+       </div>
+       <div class="container">
+         <div class="container_header">
+           <h2>Top Sales</h2><a href="#">See All &#10095;</a>
+         </div>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
+        </div>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
+        </div>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
+        </div>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
+        </div>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
+        </div>
+       </div>
+       <div class="container">
+        <div class="container_header">
+          <h2>Recently Viewed</h2><a href="#">See All &#10095;</a>
+        </div>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
+        </div>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
+        </div>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
+        </div>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
+        </div>
+        <div class="products">
+          <img src="img/prod4.jpg" alt="prod">
+          <span>item1</span>
+          <h3>EGP 600</h3>
+          <h4>EGP 400</h4>
         </div>
        </div>
      </section>
