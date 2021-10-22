@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    color: #0C1829;
+}
+body{
+  background-color: #0001;
+  margin: 0px;
+}
+section{
+  width: 80%;
+  height: fit-content;
+  margin: auto;
+  margin-top: 3vh;
+  border-radius: 10px;
+}
+.container{
+  width: 78%;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 10px;
+  float: left;
+  border-top-right-radius: 0px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.prod_img, .RATINGS_container{
+  width: 30%;
+  height: fit-content;
+  float: left;
+  position: relative;
+  z-index: 0;
+}
+.prod_img a img{
+  width: 30px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.prod_img a img:hover{
+  background-color: #0002;
+}
+#main_pic{
+  width: 100%;
+  height: 55vh;
+  border-radius: 10px;
+}
+.pic_child{
+  width: 15%;
+  height: 6vh;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+.pic_child:hover{
+  cursor: pointer;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #7f7;
+}
+.pic_child:active{
+  border-style: solid;
+  border-color: #7f7;
+}
+/* .......................... */
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 100%;
+  height: 80px;
+}
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  position: absolute;
+  top: -3vh;
+  left: 105%;
+  width: 350%;
+  height: 75vh;
+}
+/* .......................... */
+.container_b{
+  width: 70%;
+  height: fit-content;
+  float: left;
+  padding: 25px;
+}
+section div h3{
+  font-weight: normal;
+}
+.price{
+  text-align: left;
+}
+.price_a{
+  font-weight: bold;
+}
+section div h4{
+  font-weight: bold;
+  color: #0009;
+  text-decoration: line-through;
+  display: inline;
+}
+.price span{
+  font-weight: bold;
+  padding: 5px;
+  background-color: #FEEF8E;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+section div hr{
+  margin: 25px 0px;
+}
+#rating{
+  clear: both;
+  display: block;
+  margin-top: 10px;
+}
+.checked {
+  color: orange;
+}
+.container_b input{
+  display: block;
+}
+#details{
+  color: #344F96;
+  cursor: pointer;
+}
+section input[type="submit"]{
+  cursor: pointer;
+  width: 180px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px #222;
+  transition: .6s;
+  background-color: #5C6A8D;
+  color: #fff;
+  clear: both;
+  margin: 10px;
+}
+section input[type="submit"]:hover{
+  background-color: #2E4566;
+  position: relative;
+  top: 2px;
+}
+#sec2{
+  width: 20%;
+  height: 100vh;
+  float: right;
+}
+#sec2 .buy{
+  text-align: center;
+  margin: 15px;
+  background-color: #fff;
+  width: 100%;
+  height: fit-content;
+  padding: 15px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  position: sticky;
+  top: 150px;
+  z-index: 0;
+}
+#sec2 .buy select{
+  width: 50px;
+  height: 25px;
+
+}
+.cloth_size input{
+  min-width: 50px;
+  padding: 5px;
+  float: left;
+  margin: 15px 5px;
+  background-color: #0001;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0002;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.cloth_size input:hover{
+  border-color: #0006;
+}
+.container_b a{
+  color: #344F96;
+  transition: .6s;
+  float: right;
+  text-decoration: none;
+}
+.container_b div a{
+  float: none;
+  margin-left: 10px;
+}
+.container_b a:hover{
+text-decoration: underline;
+  color: #0C182999;
+}
+#report{
+  margin-top: 200px;
+  float: left;
+  color: #0C1829;
+  transition: .6s;
+}
+#report:hover{
+  text-decoration: none;
+  color: #0C182999;
+}
+.ads{
+  width: 70%;
+  height: 25vh;
+  margin: auto;
+  clear: both;
+  background-color: #f03;
+  text-align: center;
+  font-size: 100px;
+}
+.ads input{
+  float: right;
+  background-color: #fff;
+  color: #0C1829;
+  border: none;
+  margin: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.ads input:hover{
+  background-color: #333;
+  color: #eee;
+}
+#viewall_datails{
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+#viewall_datails tr{
+  background-color: #ADD8E6;
+}
+#viewall_datails th{
+  max-width: 400px;
+  overflow-wrap: break-word;
+  text-align: left;
+  padding: 5px;
+  padding-right: 35px;
+}
+#viewall_datails td{
+  max-width: 500px;
+  overflow-wrap: break-word;
+  padding: 5px;
+  padding-right: 35px;
+}
+.RATINGS{
+  padding: 15px;
+  width: 60%;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 5px;
+}
+.RATINGS #rating .fa{
+  color: orange;
+}
+.RATINGS_container_a{
+  margin: 15px;
+}
+.RATINGS_container_a .fa{
+  color: orange;
+}
+.comment h3{
+  font-weight: bold;
+}
+.container_header{
+  background-color: #3f51b5;
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+  margin-bottom: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 0px 7px 15px #3f51b5;
+}
+.container_header h2{
+  display: inline;
+  color: #fff;
+  font-size: 20px;
+}
+.container_header a{
+  float: right;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+}
+.container_header a:hover{
+  position: relative;
+  left: 3px;
+}
+.products{
+  width: 18%;
+  height: 35vh;
+  padding: 0px 0px 10px 10px;
+  border-radius: 5px;
+  float: left;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.products:hover{
+  box-shadow: 5px -5px 10px 3px #222;
+}
+.products img{
+  width: 100%;
+  height: 70%;
+  border-radius: 5px;
+}
+.products h3{
+  font-weight: bold;
+  margin: 4px 0px;
+}
+#comment
+		{
+		width: 50%;
+		height: 100px;
+		margin:20px 0px 20px 150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+		}
+		#comment:focus
+		{
+			outline: none;
+		}
+    #commentpost
+		{
+			display: none;
+		}
+    #postcomment
+		{
+  background-color: #5C6A8D;
+  color: #fff;
+	transition: 1s;
+  cursor: pointer;
+  width: 120px;
+  padding: 10px;
+  margin-left: 680px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px #222;
+  transition: .6s;
+}
+	#postcomment:hover
+	{
+		background-color: #2E4566;
+	}
+
+		#postcomment:focus
+		{
+			outline: none;
+		}
+		#postcomment:active
+		{
+			position: relative;
+			top: 5px;
+		}
+  #tname, #Title
+	{
+		width: 40%;
+		height: 30px;
+		margin: 0px 0px 20px 180px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+		border-style: solid;
+		border-width: 1.5px;
+	}
+	#tname:focus, #Title:focus
+	{
+		outline: none;
+	}
