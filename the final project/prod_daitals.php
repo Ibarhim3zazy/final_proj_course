@@ -13,16 +13,38 @@
       require 'header.php';
      ?>
      <section>
-       <div id="sec2">
-
+      <div id="sec2">
+        <div class="buy">
+          <span>to buy, select <b>size</b></span>
+          <div class="price">
+            <h3 class="price_a">EGP 150</h3>
+            <h4>EGP 200</h4><span> -25%</span><hr>
+            Estimated Total cost: <b>$89.78</b> including Shipping <b id="details">Details&#9662;</b></p>
+            Arrives: Friday, Nov 26 </p>
+            In Stock. </p>
+            <select class="" name="">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select></p>
+          </div>
+          <input type="submit" name="" value="Add to cart"></p>
+            Ships from<b> Amazon.com</b></p>
+            Sold by<b> Amazon.com</b>
+        </div>
        </div>
        <div class="container">
        <div class="prod_img">
-         <img src="img/prod1.jpg" id="main_pic" alt="shoes">
-         <img src="img/prod1.jpg" class="pic_child" alt="pic2">
-         <img src="img/prod2.jpg" class="pic_child" alt="pic3">
-         <img src="img/prod3.jpg" class="pic_child" alt="pic4">
-         <img src="img/prod4.jpg" class="pic_child" alt="pic5"><hr>
+         <div id="move" onmouseleave="hide_lens()" onmousemove="show_lens()">
+           <div class="img-zoom-lens"></div>
+           <img src="img/prod2.jpg" id="main_pic" alt="shoes">
+         </div>
+         <div id="myresult" class="img-zoom-result"></div>
+         <img src="img/prod1.jpg" class="pic_child" onclick="pic_change(this.src)" alt="pic2">
+         <img src="img/prod2.jpg" class="pic_child" onclick="pic_change(this.src)" alt="pic3">
+         <img src="img/prod3.jpg" class="pic_child" onclick="pic_change(this.src)" alt="pic4">
+         <img src="img/prod4.jpg" class="pic_child" onclick="pic_change(this.src)" alt="pic5"><hr>
          <span>SHARE THIS PRODUCT</span><br>
          <a href="#"><img src="img/fb.svg" alt="facebook"></a>
          <a href="#"><img src="img/tw.svg" alt="twitter"></a>
@@ -39,7 +61,7 @@
           <span class="fa fa-star" onclick="checked(5)"></span> (000 ratings)
         </div><hr>
         <div class="price">
-          <h3 id="price">EGP 150</h3>
+          <h3 class="price_a">EGP 150</h3>
           <h4>EGP 200</h4><span> -25%</span><hr>
         </div>
         <span>VARIATION AVAILABLE</span>
@@ -54,7 +76,7 @@
           <input type="button" name="" value="4XL">
           <input type="button" name="" value="5XL">
         </div>
-      <input type="submit" name="" value="Add to cart"><br style="clear: both;"><hr>
+        <br style="clear: both;"><hr>
        </div>
      </div>
      </section>
@@ -72,14 +94,6 @@
        </div>
        <div class="container">
         <h1>Specifications</h1><hr>
-        <div class="Specifications_title">
-          <a href="#">aesd</a>
-          <a href="#">awsd</a>
-          <a href="#">awsd</a>
-        </div>
-        <div class="Specifications_datails">
-          waesdwsa
-        </div>
         <table id="viewall_datails">
           <tr>
             <th>Specifications_title</th>
@@ -134,14 +148,18 @@
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
-          </div>
-          <div class="comment">
-            <h3>comment title</h3>
-            <p>sdfds</p>
-            <span>01/02/2000 </span>by <span>first name</span>
           </div><hr>
+          <div class="comment" id="commented">
+          </div>
         </div>
        </div>
+    <div>
+      <textarea placeholder="Comment" onkeyup="comment_check()" id="comment"></textarea>
+    </div>
+    <div id="commentpost">
+      <input type="text" placeholder="Title (requird)" id="Title">
+      <input type="text" placeholder="Name (requird)" id="tname"><input type="button" value="Post Comment" onclick="commentt()" id="postcomment">
+    </div>
        <div class="container">
         <h2>More items from this seller</h2>
         <div class="products">

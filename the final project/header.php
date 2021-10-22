@@ -22,7 +22,7 @@
 				<div class="logo">
 					<a href="#" id="hide-register-login">register/login</a>
 				</div>
-			<a  href="#" onclick="toogle()">
+			<a  href="javascript:" onclick="toogle()">
 			<div class="container-menu-bar-icon" id="container-menu-bar-icon">
 			<div class="menu-bar-icon">
 	    <div class="menu-bar-icon">

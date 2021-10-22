@@ -28,6 +28,8 @@ section{
   width: 30%;
   height: fit-content;
   float: left;
+  position: relative;
+  z-index: 0;
 }
 .prod_img a img{
   width: 30px;
@@ -58,6 +60,23 @@ section{
   border-style: solid;
   border-color: #7f7;
 }
+/* .......................... */
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 100%;
+  height: 80px;
+}
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  position: absolute;
+  top: -3vh;
+  left: 105%;
+  width: 350%;
+  height: 75vh;
+}
+/* .......................... */
 .container_b{
   width: 70%;
   height: fit-content;
@@ -67,7 +86,10 @@ section{
 section div h3{
   font-weight: normal;
 }
-#price{
+.price{
+  text-align: left;
+}
+.price_a{
   font-weight: bold;
 }
 section div h4{
@@ -75,9 +97,8 @@ section div h4{
   color: #0009;
   text-decoration: line-through;
   display: inline;
-
 }
-.container_b .price span{
+.price span{
   font-weight: bold;
   padding: 5px;
   background-color: #FEEF8E;
@@ -98,13 +119,14 @@ section div hr{
 .container_b input{
   display: block;
 }
+#details{
+  color: #344F96;
+  cursor: pointer;
+}
 section input[type="submit"]{
   cursor: pointer;
   width: 180px;
   padding: 10px;
-  margin-top: 50px;
-  margin-right: 50px;
-  float: right;
   border: none;
   border-radius: 10px;
   box-shadow: 0px 3px 10px #222;
@@ -112,7 +134,7 @@ section input[type="submit"]{
   background-color: #5C6A8D;
   color: #fff;
   clear: both;
-
+  margin: 10px;
 }
 section input[type="submit"]:hover{
   background-color: #2E4566;
@@ -120,15 +142,27 @@ section input[type="submit"]:hover{
   top: 2px;
 }
 #sec2{
-  width: 19%;
+  width: 20%;
   height: 100vh;
-  margin-left: 20px;
   float: right;
-  background-color: #7cf;
-  outline: 15px;
-  outline-style: solid;
-  outline-color: #EEEEEE;
+}
+#sec2 .buy{
+  text-align: center;
+  margin: 15px;
+  background-color: #fff;
+  width: 100%;
+  height: fit-content;
+  padding: 15px;
+  border-radius: 10px;
   border-top-left-radius: 0px;
+  position: sticky;
+  top: 150px;
+  z-index: 0;
+}
+#sec2 .buy select{
+  width: 50px;
+  height: 25px;
+
 }
 .cloth_size input{
   min-width: 50px;
@@ -185,39 +219,11 @@ text-decoration: underline;
   border: none;
   margin: 1px;
   border-radius: 2px;
+  cursor: pointer;
 }
 .ads input:hover{
   background-color: #333;
   color: #eee;
-}
-.Specifications_title, .Specifications_datails{
-  width: 45%;
-  height: fit-content;
-  border: solid;
-  border-width: 1px;
-  float: left;
-  margin-left: 4%;
-  padding: 5px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-.Specifications_title{
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.Specifications_datails{
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-.Specifications_title a{
-  display: block;
-  color: #344F96;
-  transition: .6s;
-  text-decoration: none;
-  margin-bottom: 5px;
-}
-.Specifications_title a:hover{
-  text-decoration: underline;
 }
 #viewall_datails{
   clear: both;
@@ -308,3 +314,64 @@ text-decoration: underline;
   font-weight: bold;
   margin: 4px 0px;
 }
+#comment
+		{
+		width: 50%;
+		height: 100px;
+		margin:20px 0px 20px 150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+		}
+		#comment:focus
+		{
+			outline: none;
+		}
+    #commentpost
+		{
+			display: none;
+		}
+    #postcomment
+		{
+  background-color: #5C6A8D;
+  color: #fff;
+	transition: 1s;
+  cursor: pointer;
+  width: 120px;
+  padding: 10px;
+  margin-left: 680px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px #222;
+  transition: .6s;
+}
+	#postcomment:hover
+	{
+		background-color: #2E4566;
+	}
+
+		#postcomment:focus
+		{
+			outline: none;
+		}
+		#postcomment:active
+		{
+			position: relative;
+			top: 5px;
+		}
+  #tname, #Title
+	{
+		width: 40%;
+		height: 30px;
+		margin: 0px 0px 20px 180px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+		border-style: solid;
+		border-width: 1.5px;
+	}
+	#tname:focus, #Title:focus
+	{
+		outline: none;
+	}

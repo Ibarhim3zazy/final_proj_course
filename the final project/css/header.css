@@ -16,6 +16,7 @@ body{
   text-align: center;
   position: fixed;
   top: 0px;
+  z-index: 90;
 }
 .container_a a{
   float: left;
@@ -45,13 +46,15 @@ body{
 header {
 	width: 100%;
 	position: fixed;
-  top: 20px;
+  top: 18px;
 	background-color: #212121;
 	box-shadow: 0px 5px 10px #222;
 	padding:2.5vh;
 	text-transform:Capitalize;
 	border-bottom:1px solid #212121;
 	border-top:1px solid #212121;
+  z-index: 90;
+
 }
 .menu-span header
 {
@@ -115,7 +118,7 @@ header {
 	opacity:0;
 	transition: left 0.25s ease-in-out, opacity 0.25s ease-in-out;
 	overflow-y:auto;
-  z-index: 99999;
+  z-index: 999;
 }
 .container-menu-bar-icon
 {
@@ -186,7 +189,8 @@ opacity: 1;
   font-family: Arial, Helvetica, sans-serif;
   width:100%;
   position: fixed;
-  top: 80px;
+  top: 79px;
+  z-index: 90;
 }
 .contianer-drop a {
   float: left;
