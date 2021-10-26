@@ -1,0 +1,163 @@
+body{
+  background-color: #eee;
+}
+.det_container * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: inline-block;
+}
+.det_container {
+  width: 70%;
+  margin: 0px auto;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.det_header {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid gray;
+    padding: 5px;
+}
+.det_container form {
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+    padding: 10px;
+}
+.f_name_box, .l_name_box, .e_box, .gender_box, .birth_box {
+    width: 45%;
+    height: 80px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 5%;
+}
+.f_name_box, .e_box, .gender_box {
+    float: left;
+}
+.pre_box {
+    width: 5%;
+    height: 80px;
+    padding: 5px;
+    margin-top: 10px;
+    position: relative;
+    top: -5px;
+}
+.c_key {
+    border-bottom: 2px solid gray;
+    height: 30px;
+}
+.ph_box {
+    width: 39.5%;
+    height: 80px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.f_name, .l_name, .email, .prefix, .phone, .gender, .birth {
+    width: 100%;
+    height: 20px;
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.f_name_input, .l_name_input, .e_input, .ph_input {
+    width: 100%;
+    height: 30px;
+    color: black;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+}
+.gender_opt, .date_input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ddd;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+.save_btn {
+  height: 40px;
+  width: 70%;
+  margin: 20px auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  outline: none;
+  font-size: larger;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #c33;
+  color: #fff;
+}
+.save_btn:hover {
+  background-color: #2E4566;
+  transition: 1s;
+  position: relative;
+  top: 2px;
+}
+.container{
+  width: 80%;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  padding: 15px;
+  margin: 20px auto;
+}
+.container_header{
+  background-color: #3f51b5;
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+  margin-bottom: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 0px 7px 15px #3f51b5;
+}
+.container_header h2{
+  display: inline;
+  color: #fff;
+  font-size: 20px;
+}
+.container_header a{
+  float: right;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+}
+.container_header a:hover{
+  position: relative;
+  left: 3px;
+}
+.products{
+  width: 220px;
+  height: 45vh;
+  padding: 0px 0px 10px 10px;
+  border-radius: 5px;
+  float: left;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.products:hover{
+  box-shadow: 5px -5px 10px 3px #222;
+}
+.products img{
+  width: 100%;
+  height: 70%;
+  border-radius: 5px;
+}
+.products h3{
+  font-weight: bold;
+  margin: 4px 0px;
+}
