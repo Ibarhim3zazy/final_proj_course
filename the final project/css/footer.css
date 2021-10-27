@@ -1,0 +1,21 @@
+footer{
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+  text-align: center;
+  background-color:#222;
+}
+#link_footer1
+{
+  text-decoration: none;
+	color:white;
+}
+#link_footer1:hover {
+    text-decoration: underline;
+}
+#link_footer2
+{
+  font-size: 1.2em;
+  text-decoration: none;
+  color:#327CCD;
+}
