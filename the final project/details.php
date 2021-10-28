@@ -29,6 +29,14 @@
             $password= $_SESSION['pass'];
           $r= $con->query("SELECT * FROM register WHERE e_mail='$email' AND pass= '$password' OR f_name= '$email' AND pass= '$password';");
             if ($x = $r-> fetch_assoc()){
+              echo $x['gender'];
+              if($x['gender'] == 'Male'){
+                $m='selected';
+                $f='';}
+              if($x['gender'] == 'Female'){
+                $f='selected';
+                $m='';}
+
             echo '
             <div class="f_name_box">
                 <div class="f_name">First Name</div>
@@ -59,8 +67,8 @@
                 <br>
                 <select name="gender_opt" id="" class="gender_opt">
                     <option value="Please Select">Please Select</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
+                    <option '.$m.'>Male</option>
+                    <option '.$f.'>Female</option>
                 </select>
             </div>
             <div class="birth_box">
