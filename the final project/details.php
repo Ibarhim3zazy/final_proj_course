@@ -17,9 +17,9 @@
           if (isset($_SESSION['email']) == true &&
               isset($_SESSION['pass']) == true) {
             if (isset($_POST['f_name_i']) == true){
-              $f= $_POST['f_name_i'];
-              $l_name_input= $_POST['l_name_i'];
-              $i_mail= $_POST['mail'];
+              $f_name_i= $_POST['f_name_i'];
+              $l_name_i= $_POST['l_name_i'];
+              $i_mail= $_POST['i_mail'];
               $ph_input= $_POST['ph_i'];
               $gender_opt= $_POST['gender_opt'];
               $date_input= $_POST['date_i'];
@@ -43,7 +43,7 @@
             <div class="e_box">
                 <div class="email">E-mail</div>
                 <br>
-                <input value="'.$x['e_mail'].'" type="email" id="e_input" onkeyup="e_regular()" class="e_input" name="mail">
+                <input name="i_mail" value="'.$x['e_mail'].'" type="email" id="e_input" onkeyup="e_regular()" class="e_input">
             </div>
             <div class="pre_box">
                 <div class="prefix">Prefix</div>
@@ -66,7 +66,7 @@
             <div class="birth_box">
                 <div class="birth">Birthday(optional)</div>
                 <br>
-                <input value="'.$x['birthday'].'" type="date" name="date_input" class="date_i">
+                <input value="'.$x['birthday'].'" type="date" name="date_input" class="date_input">
             </div>';
           }}
            ?>
