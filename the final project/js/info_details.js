@@ -81,3 +81,28 @@ function ph_num(){
 		else {
 			document.getElementById('ph_input').style.borderBottom="2px solid red ";
 }};
+function GetXmlHttpObject(){
+	if (window.XMLHttpRequest)
+		return new XMLHttpRequest();
+	if (window.ActiveXObject)
+		return new ActiveXObject("Microsoft.XMLHTTP");
+	return null;
+};
+function update(){
+  var email_ajax=document.getElementById("email_ajax").value;
+  var pass_ajax=document.getElementById("pass_ajax").value;
+	var f_name_i=document.getElementById("f_name_input").value;
+  var l_name_i=document.getElementById("l_name_input").value;
+  var i_mail=document.getElementById("e_input").value;
+  var ph_i=document.getElementById("ph_input").value;
+  var gender_opt=document.getElementById("gender_opt").value;
+  var date_input=document.getElementById("date_input").value;
+	var url="details_ajax.php?f_name_i="+f_name_i+"&l_name_i="+l_name_i+"&i_mail="+i_mail+"&ph_i="+ph_i+"&gender_opt="+gender_opt+"&date_input="+date_input+"&email_ajax="+email_ajax+"&pass_ajax="+pass_ajax;
+	var xmlhttp = GetXmlHttpObject();
+	xmlhttp.open("GET",url,true);
+	xmlhttp.send();
+};
+function sucess(){
+  document.querySelector(".sucess").style.display= "block";
+  setTimeout(function(){document.querySelector(".sucess").style.display= "none";}, 1000);
+};

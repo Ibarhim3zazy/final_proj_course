@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
  <meta charset = "utf-8">
@@ -6,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
    </head>
   <body>
-  <?php  require 'connection.php';
+  <?php
     include('slideshow.php');
     include('header.php');	?>
     <div class="container">
@@ -15,7 +16,7 @@
     $r= $con->query("SELECT * FROM user_order WHERE prod_id");
     while ($x = $r-> fetch_assoc()){
       $prod_id= $x['prod_id'];
-      $r_show= $con->query("SELECT * FROM add_prod_page WHERE id= '$prod_id';");
+      $r_show= $con->query("SELECT * FROM add_prod_page WHERE id= '$prod_id' limit 5;");
       while ($x0 = $r_show-> fetch_assoc()){
         if ($x0['price_sale'] > 0)
         $u= $x0['price_sale'];

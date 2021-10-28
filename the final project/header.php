@@ -33,6 +33,9 @@
           $email= $_SESSION['email'];
           $password= $_SESSION['pass'];
         $r= $con->query("SELECT * FROM register WHERE e_mail='$email' AND pass= '$password' OR f_name= '$email' AND pass= '$password';");
+        // if (r== true) {
+        //   // code...
+        // }
           if ($x = $r-> fetch_assoc()){
           echo '<form action="index.php" method="post">
             <a href="#"><input type="submit" name="logout" value="LOGOUT"></a>
