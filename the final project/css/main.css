@@ -1,0 +1,92 @@
+body{
+  background-color: #eee;
+}
+.container{
+  width: 80%;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  padding: 15px;
+  margin: 30px auto;
+}
+.products{
+  width: 18%;
+  height: 50vh;
+  padding: 0px 0px 10px 10px;
+  border-radius: 5px;
+  float: left;
+  margin-left: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.products:hover{
+  box-shadow: 5px -5px 10px 3px #222;
+}
+.products img{
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+}
+.products h3{
+  font-weight: bold;
+  margin: 4px 0px;
+}
+div h4{
+  font-weight: bold;
+  color: #0009;
+  text-decoration: line-through;
+  display: inline;
+}
+.ads{
+  width: 70%;
+  height: 25vh;
+  margin: auto;
+  clear: both;
+  background-color: #f03;
+  text-align: center;
+  font-size: 100px;
+}
+.ads input{
+  float: right;
+  background-color: #fff;
+  color: #0C1829;
+  border: none;
+  margin: 1px;
+  border-radius: 2px;
+}
+.ads input:hover{
+  background-color: #333;
+  color: #eee;
+}
+.container_header{
+  background-color: #3f51b5;
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+  margin-bottom: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: 0px 7px 15px #3f51b5;
+}
+.red{
+  background-color: #E61601;
+  box-shadow: 0px 7px 15px #E61601;
+}
+.container_header h2{
+  display: inline;
+  color: #fff;
+  font-size: 20px;
+}
+.container_header a{
+  float: right;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+}
+.container_header a:hover{
+  position: relative;
+  left: 3px;
+}
