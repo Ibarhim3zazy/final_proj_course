@@ -12,21 +12,38 @@
     <?php require("header.php") ?>;
     <div class="det_container">
         <h3 class="det_header">Details</h3>
-        <form action="#">
+        <form method="post" action="details.php">
+          <?php
+          if (isset($_SESSION['email']) == true &&
+              isset($_SESSION['pass']) == true) {
+            if (isset($_POST['f_name_i']) == true){
+              $f= $_POST['f_name_i'];
+              $l_name_input= $_POST['l_name_i'];
+              $i_mail= $_POST['mail'];
+              $ph_input= $_POST['ph_i'];
+              $gender_opt= $_POST['gender_opt'];
+              $date_input= $_POST['date_i'];
+              $con->query("UPDATE register SET f_name='$f_name_input',l_name='$l_name_input',e_mail='$e_input',phone_num='$ph_input',gender='$gender_opt',birthday='$date_input' WHERE product_id='$i' AND user_id='$ui'");
+            };
+            $email= $_SESSION['email'];
+            $password= $_SESSION['pass'];
+          $r= $con->query("SELECT * FROM register WHERE e_mail='$email' AND pass= '$password' OR f_name= '$email' AND pass= '$password';");
+            if ($x = $r-> fetch_assoc()){
+            echo '
             <div class="f_name_box">
                 <div class="f_name">First Name</div>
                 <br>
-                <input type="text" id="f_name_input" onkeyup="f_name()" class="f_name_input">
+                <input value="'.$x['f_name'].'" type="text" id="f_name_input" onkeyup="f_name()"class="f_name_input" name="f_name_i">
             </div>
             <div class="l_name_box">
                 <div class="l_name">Last Name</div>
                 <br>
-                <input type="text" id="l_name_input" onkeyup="l_name()" class="l_name_input">
+                <input value="'.$x['l_name'].'" type="text" id="l_name_input" onkeyup="l_name()"class="l_name_input" name="l_name_i">
             </div>
             <div class="e_box">
                 <div class="email">E-mail</div>
                 <br>
-                <input type="email" id="e_input" onkeyup="e_regular()" class="e_input">
+                <input value="'.$x['e_mail'].'" type="email" id="e_input" onkeyup="e_regular()" class="e_input" name="mail">
             </div>
             <div class="pre_box">
                 <div class="prefix">Prefix</div>
@@ -35,12 +52,12 @@
             </div>
             <div class="ph_box">
                 <div class="phone">Phone Number(Optional)</div>
-                <input type="number" id="ph_input" onkeyup="ph_num()" class="ph_input">
+                <input value="'.$x['phone_num'].'" type="number" id="ph_input" onkeyup="ph_num()"class="ph_input" name="ph_i">
             </div>
             <div class="gender_box">
                 <div class="gender">Gender</div>
                 <br>
-                <select name="" id="" class="gender_opt">
+                <select name="gender_opt" id="" class="gender_opt">
                     <option value="Please Select">Please Select</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
@@ -49,8 +66,11 @@
             <div class="birth_box">
                 <div class="birth">Birthday(optional)</div>
                 <br>
-                <input type="date" class="date_input">
-            </div>
+                <input value="'.$x['birthday'].'" type="date" name="date_input" class="date_i">
+            </div>';
+          }}
+           ?>
+
             <input type="submit" value="SAVE" onclick="info_details_s()" class="save_btn">
         </form>
         <br style=" clear: both;">
